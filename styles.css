@@ -1,0 +1,406 @@
+
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.7);
+  --line: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 86px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 6vw;
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-family: "Cinzel", serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  font-size: 0.95rem;
+}
+
+.nav a {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.lang-btn {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.hero {
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("assets/hero-mvp.jpg") center 55%/cover no-repeat;
+  background-color: #0a0a0a;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 6vw;
+}
+
+.hero h1 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  letter-spacing: 0.08em;
+}
+
+.hero h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
+  margin-top: 30vh;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.section {
+  padding: 60px 6vw;
+  scroll-margin-top: 86px;
+}
+
+.intro {
+  border-top: 1px solid var(--line);
+}
+
+.single-col {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.single-col p {
+  font-size: 1.05rem;
+}
+
+.single-col p + p {
+  margin-top: 18px;
+}
+
+.image-split {
+  padding: 0;
+}
+
+.service-image {
+  height: 52vh;
+  background: url("assets/interior-mvp.jpg") center 55%/cover no-repeat;
+  background-color: #0a0a0a;
+}
+
+.services {
+  border-top: 1px solid var(--line);
+}
+
+.services h3 {
+  font-size: 1.2rem;
+  margin-top: 26px;
+}
+
+.services p {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.services h3:first-child {
+  margin-top: 0;
+}
+
+.contact {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.contact h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.contact-form {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-form h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.form-field {
+  display: grid;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  justify-self: start;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--text);
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.form-submit:hover {
+  background: var(--text);
+  color: #111;
+}
+
+.form-note {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-brand {
+  font-family: "Cinzel", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+}
+
+.footer-contact {
+  text-align: left;
+  color: var(--muted);
+}
+
+.chat {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  background: #0f0f0f;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.wa-fab {
+  text-decoration: none;
+}
+
+.wa-fab svg {
+  width: 26px;
+  height: 26px;
+  fill: #25d366;
+}
+
+.wa-fab:hover {
+  border-color: #25d366;
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.35);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero h2 {
+    margin-top: 18vh;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 5vw;
+  }
+
+  .nav {
+    width: 100%;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+  }
+
+  .lang-switch {
+    align-self: flex-end;
+  }
+
+  .hero {
+    min-height: 58vh;
+  }
+
+  .hero-content {
+    padding: 70px 5vw 40px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+  }
+
+  .hero h2 {
+    margin-top: 14vh;
+    font-size: clamp(1rem, 5vw, 1.6rem);
+    letter-spacing: 0.06em;
+  }
+
+  .section {
+    padding: 42px 5vw;
+  }
+
+  .single-col {
+    max-width: 100%;
+  }
+
+  .service-image {
+    height: 34vh;
+  }
+
+  .footer-info {
+    gap: 18px;
+    padding-bottom: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    gap: 10px 16px;
+  }
+
+  .hero {
+    min-height: 52vh;
+  }
+
+  .hero h2 {
+    margin-top: 12vh;
+  }
+
+  .chat {
+    width: 52px;
+    height: 52px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .wa-fab svg {
+    width: 24px;
+    height: 24px;
+  }
+}
