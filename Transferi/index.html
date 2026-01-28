@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MVP TRANSFERS | Taxi & Transfer - Zagreb i Europa</title>
+  <meta name="description" content="MVP Transfers - Taxi i transfer usluge za Zagreb i Europu. Privatne vo&zcaron;nje, transferi i udobno putovanje 24/7." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+</head>
+<body data-lang="hr">
+  <header class="site-header">
+    <div class="brand" data-i18n="brand">MVP TRANSFERS</div>
+    <nav class="nav">
+      <a href="#home" data-i18n="nav_home">Home</a>
+      <a href="#onama" data-i18n="nav_about">O nama</a>
+      <a href="#usluge" data-i18n="nav_services">Usluge</a>
+      <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+      <a href="#rezervacija" data-i18n="nav_booking">Rezervacija</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn active" type="button" data-lang-btn="hr">HR</button>
+      <button class="lang-btn" type="button" data-lang-btn="en">EN</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 data-i18n="hero_title">MVP TRANSFERS</h1>
+        <h2 data-i18n="hero_subtitle">TAXI & TRANSFER - ZAGREB I EUROPA</h2>
+      </div>
+    </section>
+
+    <section id="onama" class="section intro">
+      <div class="single-col">
+        <p data-i18n="about_main">
+          Istra&zcaron;ite na&scaron;u ponudu usluga osmi&scaron;ljenih kako bi pobolj&scaron;ale va&scaron;e iskustvo putovanja.
+          Od prijevoza od/do zra&ccaron;ne luke do privatnih vo&zcaron;nji i prilago&dstrok;enih privatnih izleta,
+          imamo sve &scaron;to vam je potrebno za besprijekorno i ugodno putovanje.
+        </p>
+        <p class="muted" data-i18n="about_extra">
+          Dostupni smo 0-24, s modernim vozilima i profesionalnim voza&ccaron;ima koji brinu o va&scaron;em komforu.
+        </p>
+      </div>
+    </section>
+
+    <section class="section image-split">
+      <div class="service-image" role="img" aria-label="Detalj interijera vozila"></div>
+    </section>
+
+    <section id="usluge" class="section services">
+      <div class="single-col list">
+        <h3 data-i18n="service_1_title">Privatne vo&zcaron;nje</h3>
+        <p data-i18n="service_1_desc">Besprijekorno putovanje gradom</p>
+
+        <h3 data-i18n="service_2_title">Otkrij svoje odredi&scaron;te</h3>
+        <p data-i18n="service_2_desc">Putujte udobno</p>
+
+        <h3 data-i18n="service_3_title">Gradski i me&dstrok;ugradski prijevoz</h3>
+        <p class="muted" data-i18n="services_note">Fleksibilne rute, &ccaron;ekanje bez stresa i potpuna diskrecija.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact">
+      <div class="single-col">
+        <h3 data-i18n="contact_title">Kontaktirajte nas</h3>
+        <p data-i18n="contact_body">Imate pitanja ili &zcaron;elite rezervirati vo&zcaron;nju? Slobodno nas kontaktirajte 24/7.</p>
+        <p data-i18n="contact_info">Email: mvptransfers.hr@gmail.com<br />Telefon: +385916363447</p>
+        <p class="muted" data-i18n="contact_footer">Va&scaron;a vo&zcaron;nja bez stresa po&ccaron;inje jednim pozivom ili porukom.</p>
+
+        <div class="contact-form">
+          <h4 data-i18n="contact_form_title">Slu&zcaron;beni kontakt</h4>
+          <p class="muted" data-i18n="contact_form_desc">Koristite slu&zcaron;benu kontakt formu za upite i rezervacije.</p>
+          <form class="form" action="mailto:mvptransfers.hr@gmail.com" method="post" enctype="text/plain">
+            <label class="form-field">
+              <span data-i18n="form_name_label">Ime i prezime</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="form-field">
+              <span data-i18n="form_email_label">Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label class="form-field">
+              <span data-i18n="form_phone_label">Telefon</span>
+              <input type="tel" name="phone" autocomplete="tel" />
+            </label>
+            <label class="form-field">
+              <span data-i18n="form_message_label">Poruka</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="form-submit" type="submit" data-i18n="form_submit">Po&scaron;alji upit</button>
+          </form>
+          <p class="form-note" data-i18n="contact_official_note">Kontaktirajte nas slu&zcaron;benim putem &mdash; privatni broj ne koristimo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rezervacija" class="section footer-info">
+      <div class="footer-brand" data-i18n="footer_brand">MVP TRANSFERS</div>
+      <div class="footer-contact">
+        <p data-i18n="footer_phone">+385916363447</p>
+        <p data-i18n="footer_email">mvptransfers.hr@gmail.com</p>
+        <p data-i18n="footer_name">Mvp transfers</p>
+        <p data-i18n="footer_address">M. Froman 3</p>
+        <p data-i18n="footer_city">10000 Zagreb</p>
+        <p data-i18n="footer_country">Croatia</p>
+      </div>
+    </section>
+  </main>
+
+  <a class="chat wa-fab" href="https://wa.me/385916363447" aria-label="WhatsApp chat">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M19.47 17.34c-.25-.12-1.48-.73-1.7-.81-.23-.09-.4-.12-.57.12-.16.25-.65.81-.8.98-.15.16-.29.19-.54.06-.25-.12-1.07-.39-2.04-1.25-.75-.67-1.26-1.49-1.41-1.74-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.57-1.38-.78-1.89-.2-.48-.4-.41-.57-.42h-.48c-.16 0-.43.06-.65.31-.23.25-.86.84-.86 2.06 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.68 4.25 3.76.6.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.18.21-.57.21-1.07.14-1.18-.06-.11-.22-.18-.46-.31zM16.02 4C9.94 4 5 8.94 5 15.02c0 2.13.62 4.2 1.8 5.98L5 27l6.16-1.73a11 11 0 004.86 1.13h.01c6.08 0 11.02-4.94 11.02-11.02C27.05 8.94 22.1 4 16.02 4zm0 20.05h-.01a9.04 9.04 0 01-4.58-1.24l-.33-.2-3.66 1.03.98-3.56-.22-.36a9.03 9.03 0 118.82 4.33z"/>
+    </svg>
+  </a>
+  <script src="script.js?v=7"></script>
+</body>
+</html>
